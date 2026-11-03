@@ -1,0 +1,47 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>For You ♡</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  <main class="container">  
+    <div class="card second-card">  
+
+        <div class="ornament"></div>  
+
+        <p class="eyebrow"></p>  
+
+        <h1 class="love-message">  
+            You are babyy😚  
+        </h1>  
+
+        <div class="heart">♥</div>  
+
+        <p class="subtitle">  
+            And don't you ever forget that.  
+        </p>  
+
+        <p class="footer"></p>  
+
+        <audio id="backgroundMusic" autoplay loop>  
+            <source src="happy1.mp3" type="audio/mpeg">  
+        </audio>  
+
+    </div>  
+</main>  
+
+<script>  
+    const music = document.getElementById("backgroundMusic");  
+
+    music.volume = 0.5;  
+
+    music.play().catch(() => {  
+        document.addEventListener("click", () => {  
+            music.play();  
+        }, { once: true });  
+    });  
+</script>
+
+</body>  
+</html>
